@@ -25,8 +25,12 @@ RegisterNumber:  212222230056
 
 ```python
 import numpy as np
-x=np.array(eval(input()))
-y=np.array(eval(input()))
+
+print("Enter X values (separated by commas):")
+x = np.array(eval(input()))
+
+print("\nEnter Y values (separated by commas):")
+y = np.array(eval(input()))
 
 x_mean=np.mean(x)
 y_mean=np.mean(y)
@@ -41,11 +45,11 @@ for i in range(len(x)):
 m=num/den
 c=y_mean-m*x_mean
 
-print('Slope:',m)
-print('Y-intercept:',c)
+print('\nSlope:',m)
+print('\nY-intercept:',c)
 
 y_prediction=m*x+c
-print('Predicted values:\n',y_prediction)
+print('\nPredicted values:\n',y_prediction)
 
 import matplotlib.pyplot as plt
 plt.scatter(x,y)
@@ -55,7 +59,7 @@ plt.show()
 ```
 
 ## Output:
-![Screenshot from 2024-02-22 10-31-51](https://github.com/Jenishajustin/Find-the-best-fit-line-using-Least-Squares-Method/assets/119405070/bd79ff7e-04b7-46c0-9208-65dba6f776ce)
+![Screenshot 2024-02-25 091309](https://github.com/Jenishajustin/Find-the-best-fit-line-using-Least-Squares-Method/assets/119405070/ac37268b-d5b0-4a98-b832-da83a69fa08a)
 <br>
 
 ## Result:
